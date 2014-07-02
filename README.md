@@ -5,14 +5,17 @@ Customizable script to place on your website that shows whether
 visitors validate DNSSEC.
 
 While running, it will default to showing the image:
+
 ![Image while running](dnssec_checking.png)
 
 Upon successful detection of DNSSEC validation, the image shall be
 updated to:
+
 ![Validation detected](dnssec_secure.png)
 
 If, however, the script detect that no DNSSEC validation is performed,
 it shall update the image to:
+
 ![no validation detected](dnssec_insecure.png)
 
 Installation
