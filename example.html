@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="dnssec_check.js" type="text/javascript"></script>
+
+  <!-- These setters are all optional, and have the same values as
+       the defaults, but shown here as examples -->
+  <script type="text/javascript">
+    sidn_dnssec_set_timeout(2000);
+    sidn_dnssec_set_test_image('//servfail.sidnlabs.nl/1x1.png');
+    sidn_dnssec_set_checking_image('dnssec_checking.png');
+    sidn_dnssec_set_checking_text('Checking DNSSEC Validation');
+    sidn_dnssec_set_success_image('dnssec_secure.png');
+    sidn_dnssec_set_success_text('DNSSEC Validation is enabled');
+    sidn_dnssec_set_failure_image('dnssec_insecure.png');
+    sidn_dnssec_set_failure_text('DNSSEC Validation is not enabled');
+  </script>
+  <!-- end of example setters -->
+
+  <title>DNSSEC validation test</title>
+
+</head>
+<body>
+
+  <div>
+    <p>
+      Example DNSSEC validation: the div below should show DNSSEC validation status.
+    </p>
+  </div>
+
+  <!-- This is the div that shows the check-in-progress image
+       and the check result -->
+  <div id="sidn_dnssec_check"></div>
+
+</body>
+</html>
