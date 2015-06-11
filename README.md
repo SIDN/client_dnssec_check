@@ -18,6 +18,8 @@ it shall update the image to:
 
 ![no validation detected](dnssec_insecure.png)
 
+Example: http://dnssec.nl/ (upper right corner).
+
 Installation
 ------------
 
